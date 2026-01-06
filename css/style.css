@@ -1,0 +1,83 @@
+:root{
+    --green: #5fa70180;
+    --black: #161717;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #161717;
+}
+
+main{
+    height: 100vh;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    height: inherit;
+    padding: 15px;
+    color: #fff;
+}
+
+.div1 {
+    grid-column: span 5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--green);
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+    border: 1px solid var(--green);
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid var(--green);
+}
+
+.div4 {
+    grid-column-start: 5;
+    grid-row-start: 2;
+    border: 1px solid var(--green);
+}
+
+.div5 {
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
+    border: 1px solid var(--green);
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+    border: 1px solid var(--green);
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    border: 1px solid var(--green);
+}
+
+.div8 {
+    grid-column: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    border: 1px solid var(--green);
+}
