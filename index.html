@@ -6,25 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keegan Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 
 <body>
 
     <main>
 
+        <div class="header">
+            <h3>Andrew Keegan M. Rosales</h3>
+            <div class="location-cv">
+                <a href="/pdf/Rosales_Resume.pdf" download>Resume/CV</a>
+                <p><span class="material-symbols-outlined">location_on</span>Lipa City, Batangas, Philippines</p>
+            </div>
+        </div>
+
         <div class="parent">
-            <div class="div1">1</div>
-            <div class="div2">2</div>
-            <div class="div3">3</div>
-            <div class="div4">4</div>
+            <div class="about">
+                <h2>~ About Me</h2>
+                <p>
+                    I am a <span class="highlight">full-stack developer</span> and <span class="highlight">IT
+                        student</span> with hands-on experience in building responsive web applications using <span
+                        class="highlight">React.js, JavaScript, Tailwind CSS, PHP, Laravel, and MySQL</span>. I have
+                    experience in both front-end and back-end development, including REST API integration and applying
+                    UI/UX best practices. I am seeking an internship or entry-level role as a web developer, front-end
+                    developer, or full-stack developer.
+                </p>
+            </div>
+            <div class="skills">
+                <h2>~ Skills</h2>
+                <div class="front-end">
+                    <h2 class="card-tag">Front-end Development</h2>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React.js (Vite)</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="back-end">
+                    <h2 class="card-tag">Back-end Development</h2>
+                    <div class="skill-tags">
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="languages">
+                    <h2 class="card-tag">Programming Languages</h2>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+
+                <div class="tools">
+                    <h2 class="card-tag">Tools & Technologies</h2>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>~ Contact</h2>
+                <div class="contact-list">
+                    <ul>
+                        <li>
+                            <a href="#" id="copy-number">
+                                <span class="material-symbols-outlined">call</span>+63 968 668 9357
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:rosaleskeegan@gmail.com">
+                                <span class="material-symbols-outlined">mail</span>rosaleskeegan@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/keeganrosales/" target="_blank">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SusiBaril" target="_blank">
+                                Github
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="div5">5</div>
             <div class="div6">6</div>
             <div class="div7">7</div>
             <div class="div8">8</div>
         </div>
 
+        <div id="toast" class="toast">Number copied to clipboard!</div>
     </main>
 
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
