@@ -18,3 +18,17 @@ copyBtn.addEventListener('click', function(e) {
     });
 
 });
+
+const projects = document.getElementById('project-link');
+const toast2 = document.getElementById('project');
+
+projects.addEventListener('click', function(e) {
+
+    e.preventDefault();
+
+    toast2.classList.add('show');
+    setTimeout(function() {
+        toast2.classList.remove('show');
+    }, 3000); 
+
+});

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 :root {
-    --green: #a6d963;
+    --green: #5fa701;
     --dark-green: #5fa701;
     --black: #161717;
 }
@@ -185,9 +185,7 @@ main {
 }
 
 .education {
-    grid-row: span 3;
     padding: 15px;
-    height: fit-content;
     border: 1px solid var(--green);
     background-color: #0d1117;
     color: #dcdcdc;
@@ -209,7 +207,7 @@ main {
     position: absolute;
     content: '';
     width: 4px;
-    height: calc(100% + 50px);
+    height: 100%;
     background: rgb(138, 145, 150);
     background: -moz-linear-gradient(left, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%);
@@ -229,7 +227,6 @@ main {
     border-radius: 40px;
     border: 1px solid #17191B;
     border-right-color: black;
-    margin-bottom: 30px;
 }
 
 .timeline-month span {
@@ -309,7 +306,6 @@ main {
 
 .timeline-box {
     position: relative;
-
     background-color: #444950;
     border-radius: 15px;
     border-top-left-radius: 0px;
@@ -361,7 +357,6 @@ main {
 .projects {
     grid-column: span 2;
     padding: 15px;
-    height: fit-content;
     border: 1px solid var(--green);
     background-color: #0d1117;
     color: #dcdcdc;
@@ -373,10 +368,37 @@ main {
     border: 1px solid #333;
 }
 
+.projects .items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.items img{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.items p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.items a{
+    text-decoration: none;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.items a:hover{
+    text-decoration: underline;
+}
+
 .certificate {
-    grid-column: span 2;
+    grid-column: span 1;
     padding: 15px;
-    height: fit-content;
     border: 1px solid var(--green);
     background-color: #0d1117;
     color: #dcdcdc;
@@ -386,6 +408,26 @@ main {
     padding: 15px;
     overflow: auto;
     border: 1px solid #333;
+}
+
+.certificate-item{
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.certificate-item p{
+    font-size: 16px;
+}
+
+.certificate-item:last-child{
+    border-bottom: none;
+}
+
+.certificate-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .toast {
