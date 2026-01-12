@@ -19,7 +19,7 @@ copyBtn.addEventListener('click', function(e) {
 
 });
 
-const projects = document.getElementById('project-link');
+const projects = document.getElementById('project-links');
 const toast2 = document.getElementById('project');
 
 projects.addEventListener('click', function(e) {
