@@ -789,3 +789,56 @@ main {
     font-size: 13px;
   }
 }
+
+/* Large screens (min-width: 1025px) - Default desktop layout */
+@media (min-width: 1025px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .parent {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .header {
+    font-size: 16px;
+  }
+
+  .about,
+  .skills {
+    font-size: 12px;
+  }
+
+  .skill-tags span{
+    font-size: 14px;
+  }
+
+  .about p {
+    font-size: 13px;
+  }
+
+  .contact {
+    font-size: 13px;
+  }
+
+  .projects {
+    height: 58rem;
+    font-size: 13px;
+  }
+
+  .items img {
+    height: 500px;
+  }
+
+  .items p {
+    font-size: 12px;
+  }
+
+  .education {
+    font-size: 13px;
+  }
+
+  .certificate {
+    font-size: 13px;
+  }
+}
