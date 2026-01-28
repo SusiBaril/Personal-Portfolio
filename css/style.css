@@ -111,6 +111,13 @@ main {
   border: 1px solid #333;
 }
 
+@media (max-width: 640px) {
+  .skills {
+    grid-column: span 1 !important;
+    grid-row: auto !important;
+  }
+}
+
 .skills h2 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -139,6 +146,17 @@ main {
   display: grid;
   grid: auto / repeat(3, 1fr);
   gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-tags {
+    grid: auto / repeat(2, 1fr);
+  }
+
+  .back-end .skill-tags {
+    grid: auto / repeat(1, 1fr);
+  }
+  
 }
 
 .contact {
