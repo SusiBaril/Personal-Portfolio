@@ -76,11 +76,23 @@ main {
   padding: 15px;
   background-color: #0d1117;
   color: #dcdcdc;
-  font-size: 14px;
   line-height: 1.5;
   border-radius: 5px;
   overflow: auto;
   border: 1px solid #333;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 4rem;
+}
+
+.profile img{
+  width: 15rem;
+  border-radius: 50%;
 }
 
 .about h2 {
@@ -88,8 +100,8 @@ main {
   margin-bottom: 10px;
 }
 
-.about p {
-  font-size: 17px;
+.about .body {
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -121,6 +133,10 @@ main {
 .skills h2 {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.card-tag{
+  margin: 15px 0px 0px 0px;
 }
 
 .skills .card-tag,
@@ -453,7 +469,7 @@ main {
 }
 
 .projects {
-  grid-column: span 3;
+  grid-column: span 4;
   padding: 15px;
   border: 1px solid var(--green);
   background-color: #0d1117;
@@ -567,6 +583,41 @@ main {
 .toast.show {
   visibility: visible;
   opacity: 1;
+}
+
+.work-section{
+  grid-column: span 4;
+  padding: 15px;
+  border: 1px solid var(--green);
+  background-color: #0d1117;
+  color: #dcdcdc;
+  font-size: 17px;
+  line-height: 1.5;
+  border-radius: 5px;
+  overflow: auto;
+  border: 1px solid #333;
+}
+
+.work-item{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.company-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  border-bottom: 3px solid var(--dark-green);
+  padding-bottom: 5px;
+}
+
+.work-item ul{
+  list-style: disc;
+  padding-left: 20px;
 }
 
 /* Mobile Responsive - Small screens (max-width: 640px) */
